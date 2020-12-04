@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8860DD</color>
+    <color name="colorPrimaryDark">#8860DD</color>
+    <color name="colorAccent">@color/grey</color>
+    <color name="grey">#717171</color>
+    <color name="error">#F44336</color>
+    <color name="bgGrey">#E2E2E2</color>
+    <color name="black">#000000</color>
+    <color name="darkwhite">#EDEFF7</color>
+    <color name="charblack">#2C2C2C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="card1">#F48FB1</color>
+    <color name="card2">#75CDBC</color>
+    <color name="card3">#E6B999</color>
+    <color name="card4">#AEC8DF</color>
+    <color name="banner">#C4A8FF</color>
+    <color name="duskYellow">#EAC34F</color>
+    <color name="lightGrey">#CCCCCC</color>
+</resources>

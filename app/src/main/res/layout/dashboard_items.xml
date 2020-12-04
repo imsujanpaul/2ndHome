@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:clickable="true"
+    android:id="@+id/featureditemcard"
+    app:rippleColor="#D8CAF6"
+    android:focusable="true"
+    android:layout_marginStart="2.5dp"
+    android:layout_marginEnd="2.5dp"
+    app:cardCornerRadius="2dp"
+    android:layout_height="300dp"
+    app:cardBackgroundColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:scaleType="fitXY"
+    android:elevation="8dp"
+    android:src="@drawable/samplepic"
+    />
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/pgname"
+            android:textColor="@color/charblack"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <com.sackcentury.shinebuttonlib.ShineButton
+            android:id="@+id/addfav"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            app:allow_random_color="false"
+            app:enable_flashing="true"
+            app:big_shine_color="@color/error"
+            app:click_animation_duration="200"
+            app:shine_animation_duration="1500"
+            app:shine_turn_angle="20"
+            app:small_shine_offset_angle="20"
+            app:shine_distance_multiple="2"
+            app:small_shine_color="@color/colorPrimaryDark"
+            app:shine_count="8"
+            app:btn_fill_color="@color/error"
+            app:siShape="@drawable/ic_heart"
+            app:btn_color="@color/lightGrey"/>
+    </RelativeLayout>
+    <RatingBar
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:rating="4.5"
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:theme="@style/RatingBar" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mohbonda, Jorhat"
+        android:textSize="12sp"
+        android:textColor="@color/charblack"/>
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="₹3355"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/charblack"/>
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/price"
+            android:layout_height="wrap_content"
+            android:text="29% OFF"
+            android:textSize="10sp"
+            android:layout_centerVertical="true"
+            android:textColor="#DFA806"/>
+
+    </RelativeLayout>
+</LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "441347544254",
+    "firebase_url": "https://second-home-v1.firebaseio.com",
+    "project_id": "second-home-v1",
+    "storage_bucket": "second-home-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441347544254:android:0d0f407cd5a20d97447aef",
+        "android_client_info": {
+          "package_name": "com.app.a2ndhome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441347544254-lod7ef0famnc31ootjn0n86c8hkaqtt7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlsPPDUrfKwrrc_2oj3UsVbY0MrRNNSRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441347544254-lod7ef0famnc31ootjn0n86c8hkaqtt7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441347544254:android:48c231807dcbaab9447aef",
+        "android_client_info": {
+          "package_name": "com.app.secondhomeadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441347544254-lod7ef0famnc31ootjn0n86c8hkaqtt7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlsPPDUrfKwrrc_2oj3UsVbY0MrRNNSRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441347544254-lod7ef0famnc31ootjn0n86c8hkaqtt7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

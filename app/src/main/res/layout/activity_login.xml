@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/darkwhite"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/appicon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/appicon"
+            app:layout_constraintBottom_toTopOf="@+id/signinText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/signinText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="24dp"
+            android:text="Sign In"
+            android:textColor="@color/grey"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            android:transitionName="register_txt_trans"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextFullname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appicon" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextTextFullname"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:transitionName="name_trans"
+            android:ems="10"
+            android:hint="Mobile number"
+            android:inputType="text"
+            android:textColorHint="#353535"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            app:counterTextColor="@color/grey"
+            app:endIconTint="@color/grey"
+            app:counterOverflowTextColor="@color/error"
+            app:endIconMode="clear_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="match_parent"
+                android:textColor="@color/grey"
+                android:textColorHint="#353535" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextTextPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:transitionName="password_trans"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#353535"
+            app:layout_constraintBottom_toTopOf="@+id/agreeTerms"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextFullname">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:textColor="@color/grey"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:textColorHint="#353535" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_Register"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:text="Login"
+            android:onClick="loginUser"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:transitionName="login_trans"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout1"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/agreeTerms" />
+
+        <TextView
+            android:id="@+id/agreeTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="30dp"
+            android:text="Forgot Password?"
+            android:transitionName="radio_trans"
+            android:textColor="@color/grey"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button_Register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:transitionName="openlogin_trans"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_Register"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account? "
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="openRegister"
+                android:text="Register Here"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:indeterminateTint="@color/grey"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

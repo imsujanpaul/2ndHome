@@ -1,0 +1,42 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="FullScreen" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DashboardTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/darkwhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <style name="navigationTheme">
+        <item name="itemIconTint">@color/charblack</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="itemTextColor">@color/charblack</item>
+        <item name="itemBackground">@color/darkwhite</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/lightGrey</item>
+        <item name="colorControlActivated">@color/duskYellow</item>
+    </style>
+</resources>
